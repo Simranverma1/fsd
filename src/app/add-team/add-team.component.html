@@ -1,0 +1,8 @@
+<h3>Add Team Members</h3>
+<form (ngSubmit)="addMembers()">
+  <label>Project ID: <input [(ngModel)]="projectId" name="projectId" required /></label><br>
+  <label>Members (comma-separated): <input [(ngModel)]="members" name="members" required /></label><br>
+  <button type="submit">Add Team</button>
+</form>
+<p *ngIf="success" style="color: green;">{{ success }}</p>
+<p *ngIf="error" style="color: red;">{{ error }}</p>

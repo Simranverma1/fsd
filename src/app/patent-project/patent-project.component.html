@@ -1,0 +1,7 @@
+<h3>Patent a Project</h3>
+<form (ngSubmit)="patentProject()">
+  <label>Project ID: <input [(ngModel)]="projectId" name="projectId" required /></label><br>
+  <button type="submit">Patent</button>
+</form>
+<p *ngIf="success" style="color: green;">{{ success }}</p>
+<p *ngIf="error" style="color: red;">{{ error }}</p>

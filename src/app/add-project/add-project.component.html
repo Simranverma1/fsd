@@ -1,0 +1,8 @@
+<h3>Add Project</h3>
+<form (ngSubmit)="addProject()">
+  <label>ID: <input [(ngModel)]="project.id" name="id" required /></label><br>
+  <label>Name: <input [(ngModel)]="project.name" name="name" required /></label><br>
+  <button type="submit">Add Project</button>
+</form>
+<p *ngIf="success" style="color: green;">{{ success }}</p>
+<p *ngIf="error" style="color: red;">{{ error }}</p>
